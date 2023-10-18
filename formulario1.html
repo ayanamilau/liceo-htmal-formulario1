@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <form>
+        <label for="nombre">Nombre</label>
+        <br>
+        <input type="text" name="nombre " id="Nombre" maxlength="30" size="30">
+        <br>
+        <label for="Apellidos">Apellidos</label>
+        <br>
+        <input type="text" name="Apellidos" id="Apellidos" maxlength="80" size="80">
+        <br>
+        <label for="Contraseña">Contraseña</label>
+        <br>
+        <input type="text" name="Contraseña" id="Contraseña" minlength="6" maxlength="10" size="10">
+        <br>
+        <label for="DNI">DNI</label>
+        <br>
+        <input type="text" name="DNI" id="DNI" maxlength="9" minlength="9" pattern="[0-9]{8}[A-Z]" placeholder="Ej: 12345678A" >
+        <br>
+        <br>
+        Sexo
+        <br>
+        <input type="radio" name="Sexo" id="hombre" value="hombre" checked>
+        <label for="hombre">Hombre</label>
+        <br>
+        <input type="radio" name="Sexo" id="mujer" value="mujer">
+        <label for="mujer">Mujer</label>
+        <br>
+        <label for="foto">Incluir foto</label>
+        <input type="file" name="foto" id="foto">
+        <br>
+        <input type="checkbox" name="novedades" id="novedades" checked>
+        <label for="novedades">Suscribirse al boletin de novedades</label>
+        <br>
+        <input type="submit" value="Guardar cambios">
+        <input type="reset" value="Borrar datos">
+
+
+    </form>
+</body>
+</html>
